@@ -1,21 +1,97 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
 @import "reset";
 @import "grid";
 
 body {
+  background-color: #282C34 !important;
+  box-sizing: border-box;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
 }
+
+#notesWrapper{
+  padding: 50px;
+
+  .new-note-btn {
+
+  }
+}
+
+.notes{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.note{
+  background-color: #9E29B4;
+  border-radius: 8px;
+  width: 280px;
+  margin: 0 10px 20px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+  cursor: pointer;
+  font-family: 'Sourse Sans Pro', sans-serif;
+
+  .note-header{
+    padding: 10px 16px 0;
+
+
+    .note-add, .note-close{
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      transition: all 0.3s;
+
+&:focus{
+  box-shadow: insert 2px 3px 0px;
+}
+    }
+    .note-close{
+      float: right;
+    }
+  }
+  .note-title, .note-body{
+    outline: 0;
+  }
+  .note-title{
+    font-size: 24px;
+    padding: 10px, 16px;
+
+  }
+
+  .note-body{
+    font-size: 20px;
+    padding: 10px, 16px, 16px;
+  }
+}
+
+
 
 .NavBar {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #3ADF9B;
+
 }
+
+
 
 .HomePage {
 
+
+
 }
+
 
 .AboutPage {
 
