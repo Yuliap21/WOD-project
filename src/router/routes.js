@@ -4,6 +4,7 @@ import About from '../pages/About';
 import Home from '../pages/Home';
 import Contact from '../pages/Contact';
 
+import Wourkouts from '../pages/Workouts';
 const routes = [
 	{
 		Component: Contact,
