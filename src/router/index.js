@@ -8,7 +8,7 @@ const AppRouter = () => {
 	return (
 		<Router>
 			<NavBar routes={routes} />
-			<Workout />
+
 			<Switch>
 				{routes.map(({ Component, key, path }) => (
 					<Route
@@ -20,7 +20,7 @@ const AppRouter = () => {
 				))}
 				<Route
 					path={'/:id'}
-					component={props => <Workout page={key} {...props} />}
+					component={props => <Workout {...props} />}
 				></Route>
 			</Switch>
 		</Router>

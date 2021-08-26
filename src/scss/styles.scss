@@ -6,8 +6,11 @@
 @import "grid";
 
 body {
+
   background-color: #282C34 !important;
+  color: white !important;
   box-sizing: border-box;
+
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -15,80 +18,44 @@ body {
 
 }
 
-#notesWrapper{
-  padding: 50px;
-
-  .new-note-btn {
-
-  }
+.bg-cover {
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.notes{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
+/* Background image */
+.jumbotron {
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  text-shadow: 2px 2px #000;
 }
 
-.note{
-  background-color: #9E29B4;
-  border-radius: 8px;
-  width: 280px;
-  margin: 0 10px 20px;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
-  transition: all 0.5s;
-  cursor: pointer;
-  font-family: 'Sourse Sans Pro', sans-serif;
-
-  .note-header{
-    padding: 10px 16px 0;
-
-
-    .note-add, .note-close{
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      text-align: center;
-      transition: all 0.3s;
-
-&:focus{
-  box-shadow: insert 2px 3px 0px;
+.url{
+  background-position: center;
 }
-    }
-    .note-close{
-      float: right;
-    }
-  }
-  .note-title, .note-body{
-    outline: 0;
-  }
-  .note-title{
-    font-size: 24px;
-    padding: 10px, 16px;
-
-  }
-
-  .note-body{
-    font-size: 20px;
-    padding: 10px, 16px, 16px;
-  }
-}
-
-
 
 .NavBar {
   display: flex;
   justify-content: space-around;
   width: 100%;
   background-color: #3ADF9B;
+}
+
+.ShowPage{
+  // display: inline-block;
+  // width: 24px;
+  // height: 24px;
+  // text-align: center;
+  // transition: all 0.3s;
+
+
 
 }
 
-
-
-.HomePage {
-
-
+.workouts {
 
 }
 
@@ -101,6 +68,24 @@ body {
 
 }
 
-.AppPage {
 
-}
+// .note{
+//   background-color: #9E29B4;
+//   border-radius: 8px;
+//   width: 280px;
+//   margin: 0 10px 20px;
+//   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+//   transition: all 0.5s;
+//   cursor: pointer;
+//   font-family: 'Sourse Sans Pro', sans-serif;
+//
+//   .note-header{
+//     padding: 10px 16px 0;
+//
+//
+//     .note-add, .note-close{
+//       display: inline-block;
+//       width: 24px;
+//       height: 24px;
+//       text-align: center;
+//       transition: all 0.3s;

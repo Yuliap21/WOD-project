@@ -8,7 +8,7 @@ const Workouts = props => {
 		(async () => {
 			try {
 				console.log(props);
-				const response = await fetch(`/api/workouts/`);
+				const response = await fetch(`/api/wods`);
 				const data = await response.json();
 				setWorkouts(data);
 			} catch (error) {
@@ -20,12 +20,14 @@ const Workouts = props => {
 	return (
 		<div className="workouts">
 			{workouts.map(workout => {
-				const { name, subject, _id } = workout;
+				const { name, subject, _id, timeCap } = workout;
 				return (
-					<div key={name}>
+					<div key={_id}>
 						<Link to={`/${_id}`}>
-							<h2>{subject}</h2>
+							<h2>{name}</h2>
 						</Link>
+						<h3>{subject}</h3>
+						<h4>{timeCap}</h4>
 					</div>
 				);
 			})}

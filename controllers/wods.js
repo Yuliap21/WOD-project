@@ -2,7 +2,7 @@ const Workout = require('../models/workout')
 const router = require('express').Router();
 
 
-//create
+//create--- 2
 router.post('/', async (req, res) =>{
   try{
     const createdWorkout = await Workout.create(req.body)
@@ -14,7 +14,7 @@ router.post('/', async (req, res) =>{
   }
 })
 
-//read
+//read--- 1
 
 router.get('/', async (req, res) =>{
   try{
