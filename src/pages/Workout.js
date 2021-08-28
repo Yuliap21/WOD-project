@@ -34,12 +34,13 @@ export default function Workout(props) {
 				})
 			});
 			const data = await response.json();
+			//console.log('data from post request: ', data);
 			setWorkout(data);
 		} catch (error) {
 			console.error(error);
 		}
 	};
-	//
+
 	// // update ///
 	const handleDelete = async e => {
 		try {
@@ -60,12 +61,13 @@ export default function Workout(props) {
 
 	return (
 		<div className="ShowPage">
-			{!!Object.keys(workout).length ? ( // this may cause problems.
+			{Object.keys(workout).length ? ( // this may cause problems.
 				<>
 					<h3>{workout.name}</h3>
 					<p>{workout.subject}</p>
 					<h2>{workout.timeCap}</h2>
 					<button onClick={handleDelete}>DELETE ME</button>
+					<button onClick={addWorkout}>ADDw</button>
 				</>
 			) : (
 				<h1>Loading...</h1>

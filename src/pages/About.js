@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
 
 export default function About(props) {
-	return <div className="AboutPage"></div>;
+	return <div className="WorkOut Of the Day"></div>;
 }

@@ -5,6 +5,7 @@ import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Workouts from '../pages/Workouts';
 import Workout from '../pages/Workout';
+
 const routes = [
 	{
 		Component: Contact,

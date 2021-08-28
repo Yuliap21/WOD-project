@@ -5,8 +5,18 @@
 @import "reset";
 @import "grid";
 
-body {
+@media (min-width: 600px) {
 
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+body {
+  background-image: url(https://wallpaperaccess.com/full/1244843.jpg);
   background-color: #282C34 !important;
   color: white !important;
   box-sizing: border-box;
