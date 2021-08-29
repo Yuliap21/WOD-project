@@ -20,38 +20,33 @@ export default function Workout(props) {
 		})();
 	}, []);
 
-	const addWorkout = async e => {
-		try {
-			const response = await fetch(`/api/wods/`, {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({
-					name: nameInput.current.value,
-					subject: subjectInput.current.value,
-					timeCap: timeCapInput.current.value
-				})
-			});
-			const data = await response.json();
-			//console.log('data from post request: ', data);
-			setWorkout(data);
-		} catch (error) {
-			console.error(error);
-		}
-	};
-
-	// // update ///
+	// // DELETE ///
 	const handleDelete = async e => {
 		try {
-			const response = await fetch(`/api/wods/`, {
-				//${props.match.params.id}
+			const response = await fetch(`/api/wods/${props.match.params.id}`, {
 				method: 'DELETE',
 				headers: {
 					'Content-Type': 'application/json'
 				}
 			});
 			const deletedWorkout = await response.json();
+		} catch (error) {
+			console.error(error);
+		} finally {
+			window.location.assign('/');
+		}
+	};
+
+	// // UPDATE///
+	const handleUpdate = async e => {
+		try {
+			const response = await fetch(`/api/wods/${props.match.params.id}`, {
+				method: 'UPDATE',
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			});
+			const updatedWorkout = await response.json();
 		} catch (error) {
 			console.error(error);
 		} finally {
@@ -66,8 +61,9 @@ export default function Workout(props) {
 					<h3>{workout.name}</h3>
 					<p>{workout.subject}</p>
 					<h2>{workout.timeCap}</h2>
-					<button onClick={handleDelete}>DELETE ME</button>
-					<button onClick={addWorkout}>ADDw</button>
+					<button onClick={handleDelete}>DELETE</button>
+					<button onClick={handleUpdate}>UPDATE</button>
+					// form form // defaultvalue= ''
 				</>
 			) : (
 				<h1>Loading...</h1>

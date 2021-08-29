@@ -15,8 +15,8 @@ const routes = [
 
 	{
 		Component: About,
-		key: 'About',
-		path: '/about'
+		key: 'Create',
+		path: '/create'
 	},
 	{
 		Component: Workouts,

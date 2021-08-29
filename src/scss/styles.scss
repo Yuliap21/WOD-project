@@ -52,14 +52,25 @@ body {
   justify-content: space-around;
   width: 100%;
   background-color: #3ADF9B;
+
 }
 
+.About {
+
+  .container {
+    color: white;
+    text-align: right;
+
+    .form {
+      color: red;
+       .input {
+        // styles for input here
+       }
+    }
+  }
+}
 .ShowPage{
-  // display: inline-block;
-  // width: 24px;
-  // height: 24px;
-  // text-align: center;
-  // transition: all 0.3s;
+
 
 
 
