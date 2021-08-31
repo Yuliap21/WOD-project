@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-
+import EditForm from '/src/components/form/EditForm';
 export default function Workout(props) {
 	const [workout, setWorkout] = useState({});
 	const nameInput = useRef(null); // doc.qs('input#title')
@@ -37,23 +37,6 @@ export default function Workout(props) {
 		}
 	};
 
-	// // UPDATE///
-	const handleUpdate = async e => {
-		try {
-			const response = await fetch(`/api/wods/${props.match.params.id}`, {
-				method: 'UPDATE',
-				headers: {
-					'Content-Type': 'application/json'
-				}
-			});
-			const updatedWorkout = await response.json();
-		} catch (error) {
-			console.error(error);
-		} finally {
-			window.location.assign('/');
-		}
-	};
-
 	return (
 		<div className="ShowPage">
 			{Object.keys(workout).length ? ( // this may cause problems.
@@ -62,8 +45,8 @@ export default function Workout(props) {
 					<p>{workout.subject}</p>
 					<h2>{workout.timeCap}</h2>
 					<button onClick={handleDelete}>DELETE</button>
-					<button onClick={handleUpdate}>UPDATE</button>
-					// form form // defaultvalue= ''
+					<EditForm workout={workout} />
+					{/*// form form // defaultvalue= ''*/}
 				</>
 			) : (
 				<h1>Loading...</h1>

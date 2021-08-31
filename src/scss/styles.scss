@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
 
 @import "reset";
-@import "grid";
+// @import "grid";
 
 @media (min-width: 600px) {
 
@@ -19,7 +19,6 @@ body {
   background-image: url(https://wallpaperaccess.com/full/1244843.jpg);
   background-color: #282C34 !important;
   color: white !important;
-  box-sizing: border-box;
 
   font-size: 16px;
   margin: 0;
@@ -28,20 +27,20 @@ body {
 
 }
 
-.bg-cover {
-    background-attachment: static;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+// .bg-cover {
+//     background-attachment: static;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
 
-/* Background image */
-.jumbotron {
-  text-align: center;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  text-shadow: 2px 2px #000;
-}
+// /* Background image */
+// .jumbotron {
+//   text-align: center;
+//   padding-top: 10rem;
+//   padding-bottom: 10rem;
+//   text-shadow: 2px 2px #000;
+// }
 
 .url{
   background-position: center;
@@ -53,26 +52,76 @@ body {
   width: 100%;
   background-color: #3ADF9B;
 
+#a{
+  background-color: yellow;
 }
 
-.About {
+}
+
+.Create {
+
+ position: center;
+
+ background-color: yellow !important;
+
+ #text {
+   justify-content: center;
+   color:black;
+ }
+
+
 
   .container {
-    color: white;
-    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
 
-    .form {
+
+    form {
+      width: 100%;
       color: red;
-       .input {
-        // styles for input here
-       }
+      justify-content: space-around;
+      background-color: red;
+
+    }
+
+    input {// in form font
+      color: black;
+
+     // styles for input here
+    }
+
+    h1{
+      color: blue;
+      text-align: left;
+      hight: 100%;
+      width: 100%
+      font-weight: bold;
+      font-size: 80px;
+
+    }
+    h2{
+      color: white;
+      hight: 100%;
+      width: 100%
+      text-align: left;
+      font-weight: bold;
+      font-size: 100px;
+    }
+    h3{
+      color: white;
+      text-align: left;
+      hight: 100%;
+      width: 100%
+
+      font-size: 10px;
     }
   }
 }
+
+
+
 .ShowPage{
-
-
-
 
 }
 

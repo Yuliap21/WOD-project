@@ -47,8 +47,8 @@ export default function About(props) {
 					<input type="submit" value="Add Workout" />
 				</form>
 				<div>
-					<h3>{workout.name ? ` ${workout.name}` : ''}</h3>
-					<h3>{workout.subject ? ` ${workout.subject}` : ''}</h3>
+					<h1>{workout.name ? ` ${workout.name}` : ''}</h1>
+					<h2>{workout.subject ? ` ${workout.subject}` : ''}</h2>
 					<h3>{workout.timeCap ? `Time Cap: ${workout.timeCap}` : ''}</h3>
 				</div>
 			</div>
