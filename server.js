@@ -13,6 +13,8 @@ mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
+mongoose.set('useFindAndModify', false);
+
 db.on('open', () => {
     console.log('Mongo is Connected');
 });

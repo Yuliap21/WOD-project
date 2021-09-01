@@ -60,9 +60,10 @@ body {
 
 .Create {
 
- position: center;
+ position: right;
 
  background-color: yellow !important;
+}
 
  #text {
    justify-content: center;
@@ -71,31 +72,62 @@ body {
 
 
 
-  .container {
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
+ .container {
+   align-items: right;
+   border-radius: 5px;
+   padding: 0px;
+    border-radius: 8px;
+    width: 50%;
+    height: 50%;
+    margin: 0 10px 20px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+    cursor: pointer;
+    font-family: 'Sourse Sans Pro', sans-serif;
+
+}
+    input {// in form font
+      color: black;
+      text-align: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+     // styles for input here
+    }
+
+
 
 
     form {
-      width: 100%;
+      width: 50%;
       color: red;
+      height: 50%;
+      align-items: right;
       justify-content: space-around;
-      background-color: red;
+      // background-color: ;
 
     }
 
     input {// in form font
       color: black;
-
+      text-align: center;
+      align-items: right;
+      height: 50%;
+      width: 50%;
      // styles for input here
     }
 
+
+h1, h2, h3{
+  flex-direction: column;
+  justify-content: space-between;
+}
     h1{
       color: blue;
-      text-align: left;
+      text-align: right;
       hight: 100%;
-      width: 100%
+      width: 100%;
       font-weight: bold;
       font-size: 80px;
 
@@ -103,51 +135,95 @@ body {
     h2{
       color: white;
       hight: 100%;
-      width: 100%
-      text-align: left;
+      width: 100%;
+      text-align: right;
       font-weight: bold;
       font-size: 100px;
     }
     h3{
       color: white;
-      text-align: left;
+      text-align: right;
       hight: 100%;
-      width: 100%
-
+      width: 100%;
       font-size: 10px;
     }
-  }
-}
+
+
 
 
 
 .ShowPage{
+  width: 50%;
+  height: 50%;
+  margin: auto;
 
+h3{
+  text-align: center;
+  color: red;
+  font-size: 60px;
+}
+p{
+  text-align: center;
+  font-size: 50px;
+}
+h2{
+  text-align: center;
+}
+button{
+  text-align: center;
+}
 }
 
 .workouts {
-
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  // position: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+h2{
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-stretch: extra-condensed;
+  font-family: fantasy;
+}
+  h3{
+    text-align: center;
+    font-stretch: extra-condensed;
+  }
+  h4{
+    text-align: center;
+    font-stretch: extra-condensed;
+    color: red;
+  }
 }
 
 
-.AboutPage {
+.About {
+  width: 100%;
+  height: 100%;
+position: center;
 
 }
 
 .ContactPage{
 
+  img{
+    width: 50%;
+    height: 50%;
+  }
+
 }
 
+#app{
+  width: 100%;
+  height: 100%;
+}
 
 // .note{
-//   background-color: #9E29B4;
-//   border-radius: 8px;
-//   width: 280px;
-//   margin: 0 10px 20px;
-//   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
-//   transition: all 0.5s;
-//   cursor: pointer;
-//   font-family: 'Sourse Sans Pro', sans-serif;
+//
 //
 //   .note-header{
 //     padding: 10px 16px 0;

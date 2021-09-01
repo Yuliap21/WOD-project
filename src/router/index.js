@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import routes from './routes';
 import Workout from '../pages/Workout';
+// import Carousel from '../pages/Contact';
 
 const AppRouter = () => {
 	return (

@@ -39,7 +39,7 @@ export default function Workout(props) {
 
 	return (
 		<div className="ShowPage">
-			{Object.keys(workout).length ? ( // this may cause problems.
+			{Object.keys(workout).length ? (
 				<>
 					<h3>{workout.name}</h3>
 					<p>{workout.subject}</p>
